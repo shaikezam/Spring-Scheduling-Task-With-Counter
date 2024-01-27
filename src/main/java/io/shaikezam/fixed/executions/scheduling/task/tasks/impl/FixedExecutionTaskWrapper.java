@@ -45,6 +45,7 @@ public class FixedExecutionTaskWrapper implements ISchedulerWrapper, Runnable {
         } else {
             this.cancelSchedulerTask();
 
+            currentCounter = 0;
             return;
         }
         currentCounter++;
