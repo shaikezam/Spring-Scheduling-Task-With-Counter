@@ -41,7 +41,7 @@ public class FixedExecutionTaskWrapper implements ISchedulerWrapper, Runnable {
     @Override
     public void run() {
         if (currentCounter < maxRetries) {
-            logger.info("iteration " + currentCounter + " out from " + maxRetries);
+            logger.info("iteration " + currentCounter + " out of " + maxRetries);
         } else {
             this.cancelSchedulerTask();
 
